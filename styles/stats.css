@@ -1,0 +1,107 @@
+/* 网站统计信息样式 */
+.site-stats {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 254, 0.95);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(98, 70, 234, 0.1);
+    padding: 8px 0;
+    z-index: 1000;
+    font-size: 11px;
+    color: var(--text-primary);
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.site-stats:hover {
+    opacity: 1;
+}
+
+.stats-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.stats-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--text-primary);
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.stats-item i {
+    font-size: 10px;
+    color: var(--primary-color);
+    opacity: 0.7;
+}
+
+.stats-item.contact i {
+    color: var(--secondary-color);
+}
+
+.stats-divider {
+    color: var(--primary-color);
+    opacity: 0.3;
+    font-weight: 300;
+}
+
+/* 数值高亮 */
+#busuanzi_value_site_pv,
+#busuanzi_value_site_uv {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .site-stats {
+        font-size: 10px;
+        padding: 6px 0;
+    }
+    
+    .stats-content {
+        gap: 8px;
+        padding: 0 15px;
+    }
+    
+    .stats-item {
+        gap: 3px;
+    }
+    
+    .stats-item i {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-stats {
+        font-size: 9px;
+        padding: 5px 0;
+    }
+    
+    .stats-content {
+        gap: 6px;
+        padding: 0 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .stats-divider {
+        display: none;
+    }
+    
+    .stats-item {
+        font-size: 9px;
+    }
+}
+
+

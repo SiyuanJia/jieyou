@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>解忧杂事掂</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-39HLFV6KV3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-39HLFV6KV3');
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -118,12 +129,12 @@
         <div class="stats-content">
             <span class="stats-item">
                 <i class="fas fa-eye"></i>
-                <span id="busuanzi_container_site_pv">访问次数 <span id="busuanzi_value_site_pv">-</span></span>
+                <span>访问次数 <span id="visit-count">-</span></span>
             </span>
             <span class="stats-divider">|</span>
             <span class="stats-item">
                 <i class="fas fa-users"></i>
-                <span id="busuanzi_container_site_uv">访问人数 <span id="busuanzi_value_site_uv">-</span></span>
+                <span>访问人数 <span id="visitor-count">-</span></span>
             </span>
             <span class="stats-divider">|</span>
             <span class="stats-item contact">
@@ -133,9 +144,6 @@
         </div>
     </div>
 
-    <!-- 不蒜子统计脚本 -->
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
     <!-- 确保正确的引入顺序 -->
     <script src="examples.js"></script>
     <!-- 引入拆分后的模块文件 -->
@@ -144,6 +152,7 @@
     <script src="js/steps.js"></script>
     <script src="js/numbers-project.js"></script>
     <script src="js/complete-project.js"></script>
+    <script src="js/stats.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

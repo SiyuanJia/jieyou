@@ -55,8 +55,8 @@
 }
 
 /* 数值高亮 */
-#busuanzi_value_site_pv,
-#busuanzi_value_site_uv {
+#visit-count,
+#visitor-count {
     color: var(--primary-color);
     font-weight: 500;
 }

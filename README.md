@@ -1,4 +1,4 @@
-# 解忧杂事掂 (Worry-Solving Weigher)
+# 每每解忧 (Reconciliation Seeking)
 
 一款基于传统文化的生活解忧应用，通过数字起卦和八字命理为用户提供心理疏导与生活建议。
 
